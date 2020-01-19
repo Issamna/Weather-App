@@ -1,0 +1,146 @@
+<body>
+  <div class="diagonal"></div>
+  <div class="centerBox">
+    <div id="main">
+      <div id="locationBox">
+        <i class="fas fa-map-marker-alt fa-lg locIcon"></i>
+        <h1 id="geoLoc"></h1>
+      </div>
+      <div id="wSummary"></div>
+      <div id="infoBox">
+        <div id="leftBox">
+          <div id="tempBox">
+            <span id="wTemp"></span><span>&deg;</span><button id="unit" type="button">F</button>
+          </div>
+          <div id="feelLike">
+            <p>Feels like <span id="fLike"></span><span>&deg;</span></p>
+          </div>
+        </div>
+        <div id="rightBox">
+          <div>
+            <canvas id="icon1" width="140" height="140"></canvas>
+          </div>
+        </div>
+      </div>
+      <div id="extraInfo">
+        <div>
+          <div>
+            <canvas id="precip" width="40" height="40"></canvas>
+          </div>
+          <p id="precipProb"></p>
+        </div>
+        <div>
+          <div>
+            <canvas id="wind" width="40" height="40"></canvas>
+          </div>
+          <p id="windSpeed"></p>
+        </div>
+        <div>
+          <div>
+            <canvas id="cloudCov" width="40" height="40"></canvas>
+          </div>
+          <p id="cloudCover"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="searchTitle">Search location to find your local weather</div>
+  <div id="searchBox">
+    <input type="text" name="input" placeholder="ZIP or City, State">
+    <button id="sButton" type="button" name="searchBTN"><i class="fas fa-location-arrow"></i></button>
+  </div>
+  <div class="forecastBox">
+    <div class="dayBox">
+      <h4 id="day1"></h4>
+      <div>
+        <canvas id="day1Icon" width="50" height="50"></canvas>
+      </div>
+      <h5 id="day1Sum"></h5>
+      <div class="dayInfo">
+        <div>
+          <span>H:</span><span id="day1High"></span><span>&deg;</span>
+        </div>
+        <div>
+          <span>L:</span><span id="day1Low"></span><span>&deg;</span>
+        </div>
+        <div>
+          <span><i class="fas fa-umbrella"></i></span><span id="day1Perc"></span><span>%</span>
+        </div>
+      </div>
+    </div>
+    <div class="dayBox">
+      <h4 id="day2"></h4>
+      <div>
+        <canvas id="day2Icon" width="50" height="50"></canvas>
+      </div>
+      <h5 id="day2Sum"></h5>
+      <div class="dayInfo">
+        <div>
+          <span>H:</span><span id="day2High"></span><span>&deg;</span>
+        </div>
+        <div>
+          <span>L:</span><span id="day2Low"></span><span>&deg;</span>
+        </div>
+        <div>
+          <span><i class="fas fa-umbrella"></i></span><span id="day2Perc"></span><span>%</span>
+        </div>
+      </div>
+    </div>
+    <div class="dayBox">
+      <h4 id="day3"></h4>
+      <div>
+        <canvas id="day3Icon" width="50" height="50"></canvas>
+      </div>
+      <h5 id="day3Sum"></h5>
+      <div class="dayInfo">
+        <div>
+          <span>H:</span><span id="day3High"></span><span>&deg;</span>
+        </div>
+        <div>
+          <span>L:</span><span id="day3Low"></span><span>&deg;</span>
+        </div>
+        <div>
+          <span><i class="fas fa-umbrella"></i></span><span id="day3Perc"></span><span>%</span>
+        </div>
+      </div>
+    </div>
+    <div class="dayBox">
+      <h4 id="day4"></h4>
+      <div>
+        <canvas id="day4Icon" width="50" height="50"></canvas>
+      </div>
+      <h5 id="day4Sum"></h5>
+      <div class="dayInfo">
+        <div>
+          <span>H:</span><span id="day4High"></span><span>&deg;</span>
+        </div>
+        <div>
+          <span>L:</span><span id="day4Low"></span><span>&deg;</span>
+        </div>
+        <div>
+          <span><i class="fas fa-umbrella"></i></span><span id="day4Perc"></span><span>%</span>
+        </div>
+      </div>
+    </div>
+    <div class="dayBox">
+      <h4 id="day5"></h4>
+      <div>
+        <canvas id="day5Icon" width="50" height="50"></canvas>
+      </div>
+      <h5 id="day5Sum"></h5>
+      <div class="dayInfo">
+        <div>
+          <span>H:</span><span id="day5High"></span><span>&deg;</span>
+        </div>
+        <div>
+          <span>L:</span><span id="day5Low"></span><span>&deg;</span>
+        </div>
+        <div>
+          <span><i class="fas fa-umbrella"></i></span><span id="day5Perc"></span><span>%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+<script src="https://kit.fontawesome.com/f0f8a198ac.js" crossorigin="anonymous"></script>
